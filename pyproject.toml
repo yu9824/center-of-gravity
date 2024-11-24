@@ -4,7 +4,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "python-template"
+name = "center-of-gravity"
 dynamic = ["version"]
 dependencies = []
 requires-python = ">= 3.7"
@@ -34,24 +34,24 @@ docs = ["sphinx", "sphinx_rtd_theme", "sphinx-markdown-tables", "recommonmark"]
 gui = ["TkEasyGUI"]
 
 [project.urls]
-Homepage = "https://github.com/yu9824/python-template"
+Homepage = "https://github.com/yu9824/center-of-gravity"
 # Documentation = "https://readthedocs.org"
-PyPI = "https://pypi.org/project/python-template/"
-Source = "https://github.com/yu9824/python-template"
-Tracker = "https://github.com/yu9824/python-template/issues"
-Changelog = "https://github.com/yu9824/python-template/blob/main/CHANGELOG.md"
+PyPI = "https://pypi.org/project/center-of-gravity/"
+Source = "https://github.com/yu9824/center-of-gravity"
+Tracker = "https://github.com/yu9824/center-of-gravity/issues"
+Changelog = "https://github.com/yu9824/center-of-gravity/blob/main/CHANGELOG.md"
 
 [project.scripts]
-python-template = "python_template.__main__:entrypoint"
+center-of-gravity = "center_of_gravity.__main__:entrypoint"
 
 # [project.gui-scripts]
-# python-template-gui = "python_template:main_gui"
+# center-of-gravity-gui = "center_of_gravity:main_gui"
 
 [tool.setuptools]
 package-dir = { "" = "src" }
 
 [tool.setuptools.dynamic]
-version = { attr = "python_template.__version__" }
+version = { attr = "center_of_gravity.__version__" }
 
 [tool.setuptools.packages.find]
 where = ["src/"]
